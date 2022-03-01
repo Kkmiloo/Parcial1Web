@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+
+header {
+    background: bisque;
+    height: 9rem;
+}
+
+#mainNav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#mainNav ul li {}
+
+section {
+    height: 50vh;
+    background: snow;
+    border: 1px solid aqua;
+}
+
+#lista {}
+
+#imagen {}
