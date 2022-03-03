@@ -1,45 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
 
-<body>
-
-    <div class="btnVolver">n</div>
+  <body>
     <header>
-        <h1>menu</h1>
-        <nav id="mainNav">
-            <ul>
-                <li> Hero </li>
-                <li> Descri</li>
-                <li> Progr</li>
-                <li> Lista </li>
-                <li> Precios</li>
-                <li> Patroci</li>
-            </ul>
-        </nav>
+<a href="" id="linkLogo">
+
+    <img id="logo" src="../img/Beach-party-vector.png" alt="" srcset="">
+
+</a>
+    
+      <nav id="mainNav">
+        <ul>
+          <li><a href="#heroSection">Hero </a></li>
+          <li><a href="#descripcionSection"> Descripción</a></li>
+          <li>Progr</li>
+          <li>Lista</li>
+          <li>Precios</li>
+          <li>Patroci</li>
+        </ul>
+      </nav>
     </header>
     <main>
+      <section class="sectionDiv" id="heroSection">
+          <figure>
+              <img id="imgHero""" src="../img/Festival_Playa.jpg" alt="Festival" >
 
-        <section class="sectionDiv"> HERO</section>
-        <section class="sectionDiv"> DESCRI</section>
-        <section class="sectionDiv"> PROGRA</section>
-        <section id="listaEimagen">
-            <section class="sectionDiv"> LISTA</section>
-            <section class="sectionDiv"> IMAGEN</section>
+              <div id="capa">
+                  <h1> El mejor festival de musica en la playa</h1>
+              </div>
+          </figure>
+      </section>
+      <section class="sectionDiv" id="descripcionSection">DESCRI</section>
+      <section class="sectionDiv" id="programaSection">PROGRA</section>
+      <section id="listaEimagen" >
+        <section class="sectionDiv section2" >
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/playlist/5Ukxrb8QTKjZd0L6wVXnGO?utm_source=generator"
+            width="100%"
+            height="380"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          ></iframe>
         </section>
+        <section class="sectionDiv section2" >IMAGEN</section>
+      </section>
 
-        <section class="sectionDiv"> PRECIOS</section>
-        <section class="sectionDiv"> PATROCINA</section>
+      <section class="sectionDiv" id="compraSection">
+
+        <form action="./succces.html" target="_blank">
+        <p>Separa tu boleta</p>
+          
+            <ul>
+            <li>
+              <label for="nombre"> Nombre Completo</label>
+              <input id="nombre" name="nombre" type="text" />
+            </li>
+            <li>
+              <label for="email"> Email</label>
+              <input type="email" name="Correo" id="email" />
+            </li>
+            <li>
+              <label for="telefono"> Telefono </label>
+              <input type="number" name="telefono" id="telefono" />
+            </li>
+          </ul>
+        </form>
+      </section>
+      <section class="sectionDiv" id="patrocinioSection">PATROCINA</section>
     </main>
-    <footer>
-        Footer
-    </footer>
-
-</body>
-
+    <footer>Footer</footer>
+  </body>
 </html>
