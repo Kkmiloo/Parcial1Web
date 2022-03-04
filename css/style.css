@@ -13,10 +13,12 @@
 html {
   font-size: 62.5%;
   font-family: "League Gothic", sans-serif;
+  scroll-behavior: smooth; 
+  scroll-padding-top:15rem;
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 header {
@@ -29,6 +31,7 @@ header {
   background: linear-gradient(to bottom, #ffbe88, #ffad9a);
   z-index: 1;
   height: 13rem;
+  box-shadow: 0px 15px 28px rgba(0, 0, 0, 0.5);
 }
 
 #mainNav ul {
@@ -43,6 +46,7 @@ header {
   height: 50rem;
   border: 1px solid aqua;
   text-align: center;
+  scroll-behavior: smooth; 
 }
 
 #listaEimagen {
@@ -83,8 +87,21 @@ footer {
 }
 
 #descripcionSection {
-  height: 30rem;
+  display: flex;
+  height: 50rem;
+  justify-content: space-evenly;
   background: linear-gradient(to bottom, #ffa2b4, #ed9fce);
+  flex-grow:1;     
+}
+
+#lista1, #lista2{
+
+width: 50%;
+}
+
+#listaArtistas{
+  margin-top: 3rem;
+  display: flex;
 }
 
 #programaSection {
@@ -102,7 +119,13 @@ footer {
 }
 
 #patrocinioSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 20rem;
   background: linear-gradient(to bottom, #8aaeee, #67b3ea);
+  flex-wrap: wrap;
 }
 
 figure {
@@ -114,7 +137,7 @@ figure {
 }
 #imgHero {
   border-radius: 30px;
-  height: 50vh;
+  height: 90%;
   width: 100%;
   object-fit: cover;
   object-position: 0% 100%;
@@ -131,6 +154,16 @@ figure {
   width: 100%;
   height: 100.5%;
   background: rgba(237, 159, 206, 0.2);
+}
+
+#capa p{
+  color: aliceblue;
+  padding-top: 9rem;
+  font-size: 4rem;
+  text-shadow: -1px 1px 0 #000,
+  1px 1px 0 #000,
+ 1px -1px 0 #000,
+-1px -1px 0 #000;
 }
 
 figure:hover > #capa {
@@ -158,4 +191,28 @@ p {
 #linkLogo {
   display: flex;
   justify-content: center;
+}
+
+.patrocinadores{
+  height: 10rem;
+  padding: 1rem;
+}
+
+#mapa{
+  width: 60rem;
+  height: 80%;
+  border-radius: 3rem;
+}
+
+#divMapa{
+
+  display: flex;
+  flex-direction: column;
+    justify-content: space-between;
+}
+
+#logosPatrocinio{
+
+  display: flex;
+  justify-content: space-evenly;
 }
