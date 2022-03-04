@@ -128,7 +128,7 @@ footer ul li{
 
 #descripcionSection {
   display: flex;
-  height: 50rem;
+  height: 60rem;
   justify-content: space-evenly;
   background: linear-gradient(to bottom, #ffa2b4, #ed9fce);
   flex-grow: 1;
@@ -324,4 +324,12 @@ form {
 .horarios ul li{
 
   margin-left: 10rem;
+}
+
+a:visited{
+  color: #000;
+}
+
+a:hover{
+  color: white
 }
