@@ -13,12 +13,12 @@
 html {
   font-size: 62.5%;
   font-family: "League Gothic", sans-serif;
-  scroll-behavior: smooth; 
-  scroll-padding-top:15rem;
+  scroll-behavior: smooth;
+  scroll-padding-top: 15rem;
 }
 
 body {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 header {
@@ -37,16 +37,45 @@ header {
 #mainNav ul {
   display: flex;
   justify-content: space-evenly;
+  animation-iteration-count: infinite;
 }
 
-#mainNav ul li {
+
+#animacionSpoty{
+  background:linear-gradient(to right, #FDFBFB, #EBEDEE 70%);;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 8rem;
+  animation: boing 2s ease-in-out;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+
 }
+
+@keyframes boing {
+  15%, 40%, 75%, 100% {
+      transform-origin: center center;
+  }
+  15% {
+      transform: scale(1.2, 1.1);
+  }
+  40% {
+      transform: scale(0.95, 0.95);
+  }
+  75% {
+      transform: scale(1.05, 1);
+  }
+  100% {
+      transform: scale(1, 1);
+  }
+}
+
+
 
 .sectionDiv {
   height: 50rem;
-  border: 1px solid aqua;
   text-align: center;
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 #listaEimagen {
@@ -58,8 +87,20 @@ header {
 }
 
 footer {
-  height: 10vh;
+  display: flex;
+  height: 10rem;
   background: linear-gradient(to bottom, #67b3ea, #51bae8);
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 15px 0px 28px rgba(0, 0, 0, 0.5);
+}
+
+footer ul{
+  display: flex;
+  margin-right: 10rem;
+}
+footer ul li{
+  margin: 0rem 3rem
 }
 
 .btnVolver {
@@ -75,7 +116,6 @@ footer {
 #compraSection {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 #heroSection {
@@ -91,15 +131,15 @@ footer {
   height: 50rem;
   justify-content: space-evenly;
   background: linear-gradient(to bottom, #ffa2b4, #ed9fce);
-  flex-grow:1;     
+  flex-grow: 1;
 }
 
-#lista1, #lista2{
-
-width: 50%;
+#lista1,
+#lista2 {
+  width: 50%;
 }
 
-#listaArtistas{
+#listaArtistas {
   margin-top: 3rem;
   display: flex;
 }
@@ -112,6 +152,7 @@ width: 50%;
   background: linear-gradient(to bottom, #c8a2e1, #aba8eb);
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 #compraSection {
@@ -156,14 +197,12 @@ figure {
   background: rgba(237, 159, 206, 0.2);
 }
 
-#capa p{
+#capa p {
   color: aliceblue;
   padding-top: 9rem;
   font-size: 4rem;
-  text-shadow: -1px 1px 0 #000,
-  1px 1px 0 #000,
- 1px -1px 0 #000,
--1px -1px 0 #000;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
 
 figure:hover > #capa {
@@ -193,26 +232,72 @@ p {
   justify-content: center;
 }
 
-.patrocinadores{
+.patrocinadores {
   height: 10rem;
   padding: 1rem;
 }
 
-#mapa{
+#mapa {
   width: 60rem;
   height: 80%;
   border-radius: 3rem;
 }
 
-#divMapa{
-
+#divMapa {
   display: flex;
   flex-direction: column;
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
-#logosPatrocinio{
-
+#divMapa h1 {
+  margin-bottom: 1rem;
+}
+#logosPatrocinio {
   display: flex;
   justify-content: space-evenly;
+}
+
+ul li input,
+ul li select {
+  height: 2.5rem;
+}
+
+form ul li {
+  margin-top: 2rem;
+}
+#formReserva {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-right: 43%;
+  align-items: flex-end;
+}
+
+form {
+  align-items: center;
+}
+
+#compraSection h2 {
+  margin: 1.5rem 0;
+}
+
+#submit {
+  color: black;
+  border-radius: 0.5rem;
+  width: 17rem;
+  height: 3rem;
+
+}
+
+#submit:hover{
+  cursor: pointer;
+    animation: boing 300ms ease-in-out;
+    color: #fff;
+    cursor: pointer;
+    background-color: #ffad9a;
+}
+
+#valorBoleta {
+  margin-top: 5rem;
 }

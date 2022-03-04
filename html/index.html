@@ -38,7 +38,7 @@
       </section>
       <section class="sectionDiv" id="descripcionSection">
         <div >
-          <h1>Beach Party</h1>
+          <h1 id="beachTitle">Beach Party</h1>
           <p>
             Beach Party es un festival de Musica que busca traer el ambiente de
             la playa a las ciudades mas conocidas de Colombia
@@ -90,7 +90,7 @@
             loading="lazy"
           ></iframe>
 
-          <h2>Fecha</h2>
+          <h2 id="fecha">Fecha</h2>
           <h3>31 de Febero 2023</h3>
         </div>
       </section>
@@ -100,35 +100,63 @@
           <iframe
             style="border-radius: 12px"
             src="https://open.spotify.com/embed/playlist/5Ukxrb8QTKjZd0L6wVXnGO?utm_source=generator"
-            width="100%"
+            width="80%"
             height="380"
             frameborder="0"
             allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           ></iframe>
         </section>
-        <section class="sectionDiv section2">IMAGEN</section>
+        <section class="sectionDiv section2">
+
+          <h1 id="animacionSpoty"> Lista de spotify </h1>
+
+
+        </section>
       </section>
 
       <section class="sectionDiv" id="compraSection">
-        <form action="./succces.html" target="_blank">
-          <p>Separa tu boleta</p>
+        <h2>Separa tus boletas</h2>
+        <form  action="./succces.html" target="_blank">
+         
 
-          <ul>
+          <ul id="formReserva">
             <li>
               <label for="nombre"> Nombre Completo</label>
-              <input id="nombre" name="nombre" type="text" />
+              <input id="nombre" name="nombre" type="text" required/>
             </li>
             <li>
               <label for="email"> Email</label>
-              <input type="email" name="Correo" id="email" />
+              <input type="email" name="Correo" id="email" required/>
             </li>
             <li>
               <label for="telefono"> Telefono </label>
-              <input type="number" name="telefono" id="telefono" />
+              <input type="number" name="telefono" id="telefono" required/>
+            </li>
+            <li>
+              <label for="numBoletas"> Numero de Boletas </label>
+              <select name="boletas" id="numBoletas">
+                <option >1</option>
+                <option >2</option>
+                <option >3</option>
+                <option >4</option>
+                <option >5</option>
+                <option >6</option>
+                <option >7</option>
+                <option >8</option>
+                <option >9</option>
+                <option >10</option>
+              </select>
+
+              <li>
+                <input id="submit" type="submit" value="Separar" />
+
+              </li>
             </li>
           </ul>
         </form>
+
+        <h3 id="valorBoleta">Valor por boleta: $50.000</h3>
       </section>
       <section class="sectionDiv" id="patrocinioSection">
         <h2>Patrocinado por:</h2>
@@ -164,6 +192,16 @@
         </div>
       </section>
     </main>
-    <footer>Footer</footer>
+    <footer>
+      <a href="" >
+        <img id="logo" src="../img/Beach-party-vector.png" alt="" srcset="" />
+      </a>
+      <ul>
+        <li>Acerda De</li>
+        <li>Politicas y normas</li>
+        <li>Contacto</li>
+      </ul>
+    
+    </footer>
   </body>
 </html>
