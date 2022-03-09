@@ -25,21 +25,58 @@ header {
   position: sticky;
   top: 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  justify-content: space-around;
-  background: linear-gradient(to bottom, #ffbe88, #ffad9a);
+  justify-content: space-between;
   z-index: 1;
-  height: 13rem;
+  height: 10rem;
   box-shadow: 0px 15px 28px rgba(0, 0, 0, 0.5);
+  align-items: center;
+  background: whitesmoke;
 }
 
+#mainNav{
+
+  margin-right: 10rem;
+}
 #mainNav ul {
   display: flex;
   justify-content: space-evenly;
-  animation-iteration-count: infinite;
+ 
 }
 
+
+#mainNav ul li{
+
+  margin: 0 2rem ;
+}
+
+
+#mainNav ul li a{
+  color: #2E2E2B;
+  font-size: 2.5rem;
+  
+}
+
+#mainNav ul li a:hover{
+  
+  font-size: 2.5rem;
+
+  animation: encender 250ms ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1 ;
+  
+}
+
+@keyframes encender {
+
+  0%{
+color: #000;
+  }
+  100%{
+    color: #a0a036;
+  }
+  
+}
 
 #animacionSpoty{
   background:linear-gradient(to right, #FDFBFB, #EBEDEE 70%);;
@@ -126,12 +163,25 @@ footer ul li{
   background: linear-gradient(to bottom, #ffad9a, #ffa2b4);
 }
 
+
 #descripcionSection {
+
+
   display: flex;
   height: 60rem;
   justify-content: space-evenly;
-  background: linear-gradient(to bottom, #ffa2b4, #ed9fce);
   flex-grow: 1;
+  padding-top: 3rem;
+}
+
+.borderDiv{
+margin: 0 auto;  
+  border-style: solid none none none;
+  width: 95%;
+  height: 1.4rem;
+  border-radius:0.2rem ;
+  border-color: gray;
+  
 }
 
 #lista1,
@@ -150,7 +200,6 @@ footer ul li{
 }
 
 .section2 {
-  background: linear-gradient(to bottom, #c8a2e1, #aba8eb);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -178,7 +227,7 @@ figure {
   justify-content: center;
 }
 #imgHero {
-  border-radius: 30px;
+  border-radius: 0.3rem;
   height: 90%;
   width: 100%;
   object-fit: cover;
