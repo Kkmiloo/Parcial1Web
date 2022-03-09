@@ -1,66 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Shizuru&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
+  font-family: "League Gothic", sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 15rem;
 }
 
 body {
-    display: flex;
-    overflow-x: hidden;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    font-size: 1.6rem;
+  font-size: 2.5rem;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background: bisque;
-    height: 9rem;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  z-index: 1;
+  height: 10rem;
+  box-shadow: 0px 15px 28px rgba(0, 0, 0, 0.5);
+  align-items: center;
+  background: whitesmoke;
 }
 
+#mainNav{
+
+  margin-right: 10rem;
+}
 #mainNav ul {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
+ 
 }
 
-#mainNav ul li {}
+
+#mainNav ul li{
+
+  margin: 0 2rem ;
+}
+
+
+#mainNav ul li a{
+  color: #2E2E2B;
+  font-size: 2.5rem;
+  
+}
+
+#mainNav ul li a:hover{
+  
+  font-size: 2.5rem;
+
+  animation: encender 250ms ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1 ;
+  
+}
+
+@keyframes encender {
+
+  0%{
+color: #000;
+  }
+  100%{
+    color: #a0a036;
+  }
+  
+}
+
+#animacionSpoty{
+  background:linear-gradient(to right, #FDFBFB, #EBEDEE 70%);;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 8rem;
+  animation: boing 2s ease-in-out;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes boing {
+  15%, 40%, 75%, 100% {
+      transform-origin: center center;
+  }
+  15% {
+      transform: scale(1.2, 1.1);
+  }
+  40% {
+      transform: scale(0.95, 0.95);
+  }
+  75% {
+      transform: scale(1.05, 1);
+  }
+  100% {
+      transform: scale(1, 1);
+  }
+}
+
+
 
 .sectionDiv {
-    height: 50vh;
-    background: snow;
-    border: 1px solid aqua;
-    text-align: center;
+  height: 50rem;
+  text-align: center;
+  scroll-behavior: smooth;
 }
 
 #listaEimagen {
-    display: flex;
+  display: flex;
 }
 
 #listaEimagen section {
-    width: 50vw;
+  width: 50vw;
 }
 
 footer {
-    height: 10vh;
+  display: flex;
+  height: 10rem;
+  background: linear-gradient(to bottom, #67b3ea, #51bae8);
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 15px 0px 28px rgba(0, 0, 0, 0.5);
+}
+
+footer ul{
+  display: flex;
+  margin-right: 10rem;
+}
+footer ul li{
+  margin: 0rem 3rem
 }
 
 .btnVolver {
-    position: sticky;
-    background: chartreuse;
-    top: 90vh;
-    left: 1rem;
-    height: 10rem;
-    width: 5rem;
-    overflow: hidden;
+  position: sticky;
+  background: chartreuse;
+  top: 90vh;
+  left: 1rem;
+  height: 10rem;
+  width: 5rem;
+  overflow: hidden;
+}
+
+#compraSection {
+  display: flex;
+  flex-direction: column;
+}
+
+#heroSection {
+  display: flex;
+  justify-content: center;
+  height: 50rem;
+  align-items: center;
+  background: linear-gradient(to bottom, #ffad9a, #ffa2b4);
+}
+
+
+#descripcionSection {
+
+
+  display: flex;
+  height: 60rem;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding-top: 3rem;
+}
+
+.borderDiv{
+margin: 0 auto;  
+  border-style: solid none none none;
+  width: 95%;
+  height: 1.4rem;
+  border-radius:0.2rem ;
+  border-color: gray;
+  
+}
+
+#lista1,
+#lista2 {
+  width: 50%;
+}
+
+#listaArtistas {
+  margin-top: 3rem;
+  display: flex;
+}
+
+#programaSection {
+  height: 60rem;
+  background: linear-gradient(to bottom, #ed9fce, #c8a2e1);
+}
+
+.section2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#compraSection {
+  background: linear-gradient(to bottom, #aba8eb, #8aaeee);
+}
+
+#patrocinioSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 20rem;
+  background: linear-gradient(to bottom, #8aaeee, #67b3ea);
+  flex-wrap: wrap;
+}
+
+figure {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+}
+#imgHero {
+  border-radius: 0.3rem;
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0% 100%;
+  box-shadow: 0px 15px 28px rgba(0, 0, 0, 0.5);
+}
+
+#capa {
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  transition: all 500ms ease-out;
+  width: 100%;
+  height: 100.5%;
+  background: rgba(237, 159, 206, 0.2);
+}
+
+#capa p {
+  color: aliceblue;
+  padding-top: 9rem;
+  font-size: 4rem;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+}
+
+figure:hover > #capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+figure:hover > p {
+  margin-top: 7rem;
+  margin-bottom: 1.5rem;
+  transition: all 500ms ease-out;
+}
+
+p {
+  color: rgb(34, 13, 13);
+}
+
+#logo {
+  object-fit: scale-down;
+  object-position: 50% 50%;
+  height: 7rem;
+  width: 10vw;
+}
+
+#linkLogo {
+  display: flex;
+  justify-content: center;
+}
+
+.patrocinadores {
+  height: 10rem;
+  padding: 1rem;
+}
+
+#mapa {
+  width: 60rem;
+  height: 80%;
+  border-radius: 3rem;
+}
+
+#divMapa {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#divMapa h1 {
+  margin-bottom: 1rem;
+}
+#logosPatrocinio {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul li input,
+ul li select {
+  height: 2.5rem;
+}
+
+form ul li {
+  margin-top: 2rem;
+}
+#formReserva {
+  display: flex;
+  flex-direction: column;
+  margin-right: 44.2%;
+  align-items: flex-end;
+}
+
+form {
+  align-items: center;
+}
+
+#compraSection h2 {
+  margin: 1.5rem 0;
+}
+
+#submit {
+  color: black;
+  border-radius: 0.5rem;
+  width: 17rem;
+  height: 3rem;
+
+}
+
+#submit:hover{
+  cursor: pointer;
+    animation: boing 300ms ease-in-out;
+    color: #fff;
+    cursor: pointer;
+    background-color: #ffad9a;
+}
+
+#valorBoleta {
+  margin-top: 5rem;
+}
+
+.programacion{
+  padding-top: 7rem;
+  font-size: 5rem;
+}
+
+.horarios{
+  display: flex;
+  flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5rem;
+}
+
+.horarios h2{
+  margin-left: 6rem;
+}
+
+.horarios ul{
+  display: flex;
+}
+
+.horarios ul li{
+
+  margin-left: 10rem;
+}
+
+a:visited{
+  color: #000;
+}
+
+a:hover{
+  color: white
 }
