@@ -139,7 +139,9 @@ li .borderDiv {
 }
 
 #listaEimagen {
+    position: relative;
     display: flex;
+    align-items: center;
 }
 
 #listaEimagen section {
@@ -147,9 +149,10 @@ li .borderDiv {
 }
 
 footer {
+    color: white;
     display: flex;
     height: 10rem;
-    background: linear-gradient(to bottom, #67b3ea, #51bae8);
+    background: #495057;
     justify-content: space-between;
     align-items: center;
     box-shadow: 15px 0px 28px rgba(0, 0, 0, 0.5);
@@ -184,7 +187,7 @@ footer ul li {
     justify-content: center;
     height: 50rem;
     align-items: center;
-    background: #2E2E2B;
+    background: #495057;
 }
 
 #descripcionSection {
@@ -218,7 +221,7 @@ footer ul li {
     display: flex;
     flex-direction: column;
     height: 60rem;
-    background: #3B413C;
+    background: #495057;
     color: white;
     align-items: center;
 }
@@ -230,7 +233,8 @@ footer ul li {
 }
 
 #compraSection {
-    background: linear-gradient(to bottom, #aba8eb, #8aaeee);
+    color: white;
+    background:#495057;
 }
 
 #patrocinioSection {
@@ -249,9 +253,13 @@ figure {
     height: 80%;
     display: flex;
     justify-content: center;
+    object-fit: cover;
 }
 
 #imgHero {
+    
+    width: 100%;
+    height: 100%;
     border-radius: 0.3rem;
     box-shadow: 0px 15px 28px rgba(0, 0, 0, 0.5);
 }
@@ -267,7 +275,7 @@ figure {
 
 #capa h1 {
     font-family: 'Fredoka', sans-serif;
-    color: #6EB9AE;
+    color: #dee2e6;
     padding-top: 8rem;
     font-size: 9rem;
     animation: heroBoing 2s ease;
@@ -349,6 +357,8 @@ form {
     align-items: center;
 }
 
+
+
 #compraSection h2 {
     margin: 1.5rem 0;
 }
@@ -363,30 +373,35 @@ form {
 #submit:hover {
     cursor: pointer;
     animation: boing 300ms ease-in-out;
-    color: #fff;
     cursor: pointer;
-    background-color: #ffad9a;
+
 }
 
+
+
 #valorBoleta {
+    font-size: 5rem;
     margin-top: 5rem;
 }
 
 .programacion {
-    padding-top: 5rem;
+    padding: 5rem 0;
     font-size: 5rem;
 }
 
 .horarios {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     margin-bottom: 5rem;
     width: 80%;
+
 }
 
 .horarios h2 {
-    margin-left: 6rem;
+    width: 20rem;
+    text-align: center;
+
 }
 
 .horarios ul {
@@ -395,7 +410,41 @@ form {
 }
 
 .horarios ul li {
+    
     margin-left: 10rem;
+    animation: pequeño2 500ms ease ;
+}
+
+
+.horarios ul li:hover {
+    
+    animation: agrandar2 500ms ease ;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes agrandar2{
+
+    0%{
+        font-size: 100%;
+    }
+
+    100%{
+        font-size: 170%;
+    }
+}
+
+
+@keyframes pequeño2 {
+
+    0%{
+        font-size: 170%;
+    }
+
+    100%{
+        font-size: 100%;
+    }
+    
 }
 
   /* WAVE   https://codepen.io/WebKitCoding/pen/MWKQKKZ*/
@@ -447,8 +496,51 @@ form {
 /*  https://coolors.co/ffffff-3b413c-c78283-48a9a6-6ba368 */
 
 #separador{
-    background-color: #000;
+    
+    border-radius: 1rem;
+    background-color: gray;
     width: 0.2rem;
-    align-content: center;
-    height: 50%;
+    height: 40rem;
+    border-radius: 2px;
+}
+
+.artistasPrincipales{
+
+    font-size: 4.7rem;
+    animation: pequeño 500ms ease ;
+}
+
+
+.artistasPrincipales:hover
+{
+    animation: agrandar 500ms ease ;
+    animation-fill-mode: forwards;
+    font-size: 8rem;
+}
+
+
+@keyframes agrandar {
+
+    0%{
+        font-size: 4.7rem;
+    }
+
+    100%{
+        font-size: 8rem;
+    }
+    
+}
+
+
+
+@keyframes pequeño {
+
+    0%{
+        font-size: 8rem;
+    }
+
+    100%{
+        font-size: 4.7rem;
+    }
+    
 }
