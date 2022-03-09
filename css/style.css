@@ -100,15 +100,15 @@ li .borderDiv {
 }
 
 #animacionSpoty {
-  background-color: #2E2E2B;
+    background-color: #2E2E2B;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 8rem;
-   /*
+    /*
    animation: boing 2s ease-in-out;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
-   */ 
+   */
 }
 
 @keyframes boing {
@@ -234,7 +234,7 @@ footer ul li {
 
 #compraSection {
     color: white;
-    background:#495057;
+    background: #495057;
 }
 
 #patrocinioSection {
@@ -243,7 +243,6 @@ footer ul li {
     justify-content: space-evenly;
     text-align: center;
     height: 20rem;
-
     flex-wrap: wrap;
 }
 
@@ -257,7 +256,6 @@ figure {
 }
 
 #imgHero {
-    
     width: 100%;
     height: 100%;
     border-radius: 0.3rem;
@@ -275,7 +273,7 @@ figure {
 
 #capa h1 {
     font-family: 'Fredoka', sans-serif;
-    color: #dee2e6;
+    color: #fff;
     padding-top: 8rem;
     font-size: 9rem;
     animation: heroBoing 2s ease;
@@ -357,8 +355,6 @@ form {
     align-items: center;
 }
 
-
-
 #compraSection h2 {
     margin: 1.5rem 0;
 }
@@ -374,10 +370,7 @@ form {
     cursor: pointer;
     animation: boing 300ms ease-in-out;
     cursor: pointer;
-
 }
-
-
 
 #valorBoleta {
     font-size: 5rem;
@@ -395,66 +388,55 @@ form {
     align-items: flex-start;
     margin-bottom: 5rem;
     width: 80%;
-
 }
 
 .horarios h2 {
     width: 20rem;
     text-align: center;
-
 }
 
 .horarios ul {
     display: flex;
-
 }
 
 .horarios ul li {
-    
     margin-left: 10rem;
-    animation: pequeño2 500ms ease ;
+    animation: pequeño2 500ms ease;
 }
 
-
 .horarios ul li:hover {
-    
-    animation: agrandar2 500ms ease ;
+    animation: agrandar2 500ms ease;
     animation-fill-mode: forwards;
 }
 
-
-@keyframes agrandar2{
-
-    0%{
+@keyframes agrandar2 {
+    0% {
         font-size: 100%;
     }
-
-    100%{
+    100% {
         font-size: 170%;
     }
 }
-
 
 @keyframes pequeño2 {
-
-    0%{
+    0% {
         font-size: 170%;
     }
-
-    100%{
+    100% {
         font-size: 100%;
     }
-    
 }
 
-  /* WAVE   https://codepen.io/WebKitCoding/pen/MWKQKKZ*/
 
-  .loader {
+/* WAVE   https://codepen.io/WebKitCoding/pen/MWKQKKZ*/
+
+.loader {
     height: 70px;
     display: flex;
     align-items: center;
-  }
-  .loader .stroke {
+}
+
+.loader .stroke {
     display: block;
     position: relative;
     background: #332e2e;
@@ -463,40 +445,49 @@ form {
     border-radius: 50px;
     margin: 0 5px;
     animation: animate 1.2s linear infinite;
-  }
-  @keyframes animate {
+}
+
+@keyframes animate {
     50% {
-      height: 20%;
+        height: 20%;
     }
     100% {
-      height: 100%;
+        height: 100%;
     }
-  }
-  .stroke:nth-child(1) {
+}
+
+.stroke:nth-child(1) {
     animation-delay: 0s;
-  }
-  .stroke:nth-child(2) {
+}
+
+.stroke:nth-child(2) {
     animation-delay: 0.3s;
-  }
-  .stroke:nth-child(3) {
+}
+
+.stroke:nth-child(3) {
     animation-delay: 0.6s;
-  }
-  .stroke:nth-child(4) {
+}
+
+.stroke:nth-child(4) {
     animation-delay: 0.9s;
-  }
-  .stroke:nth-child(5) {
+}
+
+.stroke:nth-child(5) {
     animation-delay: 0.6s;
-  }
-  .stroke:nth-child(6) {
+}
+
+.stroke:nth-child(6) {
     animation-delay: 0.3s;
-  }
-  .stroke:nth-child(7) {
+}
+
+.stroke:nth-child(7) {
     animation-delay: 0s;
-  }
+}
+
+
 /*  https://coolors.co/ffffff-3b413c-c78283-48a9a6-6ba368 */
 
-#separador{
-    
+#separador {
     border-radius: 1rem;
     background-color: gray;
     width: 0.2rem;
@@ -504,43 +495,31 @@ form {
     border-radius: 2px;
 }
 
-.artistasPrincipales{
-
+.artistasPrincipales {
     font-size: 4.7rem;
-    animation: pequeño 500ms ease ;
+    animation: pequeño 500ms ease;
 }
 
-
-.artistasPrincipales:hover
-{
-    animation: agrandar 500ms ease ;
+.artistasPrincipales:hover {
+    animation: agrandar 500ms ease;
     animation-fill-mode: forwards;
     font-size: 8rem;
 }
 
-
 @keyframes agrandar {
-
-    0%{
+    0% {
         font-size: 4.7rem;
     }
-
-    100%{
+    100% {
         font-size: 8rem;
     }
-    
 }
 
-
-
 @keyframes pequeño {
-
-    0%{
+    0% {
         font-size: 8rem;
     }
-
-    100%{
+    100% {
         font-size: 4.7rem;
     }
-    
 }
