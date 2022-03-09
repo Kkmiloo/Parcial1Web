@@ -32,7 +32,7 @@ header {
     height: 10rem;
     box-shadow: 0px 15px 28px rgba(0, 0, 0, 0.5);
     align-items: center;
-    background: #6EB9AE;
+    background: #48A9A6;
 }
 
 h1,
@@ -100,14 +100,15 @@ li .borderDiv {
 }
 
 #animacionSpoty {
-    background: linear-gradient(to right, #FDFBFB, #EBEDEE 70%);
-    ;
+  background-color: #2E2E2B;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 8rem;
-    animation: boing 2s ease-in-out;
+   /*
+   animation: boing 2s ease-in-out;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
+   */ 
 }
 
 @keyframes boing {
@@ -217,7 +218,7 @@ footer ul li {
     display: flex;
     flex-direction: column;
     height: 60rem;
-    background: #2E2E2B;
+    background: #3B413C;
     color: white;
 }
 
@@ -237,7 +238,7 @@ footer ul li {
     justify-content: space-evenly;
     text-align: center;
     height: 20rem;
-    background: linear-gradient(to bottom, #8aaeee, #67b3ea);
+
     flex-wrap: wrap;
 }
 
@@ -324,6 +325,7 @@ p {
 #logosPatrocinio {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 ul li input,
@@ -392,3 +394,51 @@ form {
 .horarios ul li {
     margin-left: 10rem;
 }
+
+  /* WAVE   https://codepen.io/WebKitCoding/pen/MWKQKKZ*/
+
+  .loader {
+    height: 70px;
+    display: flex;
+    align-items: center;
+  }
+  .loader .stroke {
+    display: block;
+    position: relative;
+    background: #332e2e;
+    height: 100%;
+    width: 10px;
+    border-radius: 50px;
+    margin: 0 5px;
+    animation: animate 1.2s linear infinite;
+  }
+  @keyframes animate {
+    50% {
+      height: 20%;
+    }
+    100% {
+      height: 100%;
+    }
+  }
+  .stroke:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .stroke:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  .stroke:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  .stroke:nth-child(4) {
+    animation-delay: 0.9s;
+  }
+  .stroke:nth-child(5) {
+    animation-delay: 0.6s;
+  }
+  .stroke:nth-child(6) {
+    animation-delay: 0.3s;
+  }
+  .stroke:nth-child(7) {
+    animation-delay: 0s;
+  }
+/*  https://coolors.co/ffffff-3b413c-c78283-48a9a6-6ba368 */
