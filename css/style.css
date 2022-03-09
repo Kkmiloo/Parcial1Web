@@ -1,345 +1,364 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Shizuru&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@700&display=swap');
 * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
-  font-family: "League Gothic", sans-serif;
-  scroll-behavior: smooth;
-  scroll-padding-top: 15rem;
+    font-size: 62.5%;
+    font-family: "League Gothic", sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 11rem;
 }
 
 body {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 header {
-  position: sticky;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  z-index: 1;
-  height: 10rem;
-  box-shadow: 0px 15px 28px rgba(0, 0, 0, 0.5);
-  align-items: center;
-  background: whitesmoke;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    z-index: 1;
+    height: 10rem;
+    box-shadow: 0px 15px 28px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    background: #6EB9AE;
 }
 
-#mainNav{
-
-  margin-right: 10rem;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Smooch Sans', sans-serif
 }
+
+#mainNav {
+    margin-right: 10rem;
+}
+
 #mainNav ul {
-  display: flex;
-  justify-content: space-evenly;
- 
+    display: flex;
+    justify-content: space-evenly;
 }
 
-
-#mainNav ul li{
-
-  margin: 0 2rem ;
+#mainNav ul li {
+    margin: 0 2rem;
+    height: 3rem;
 }
 
-
-#mainNav ul li a{
-  color: #2E2E2B;
-  font-size: 2.5rem;
-  
+#mainNav ul li a {
+    color: #292920;
+    font-size: 2.5rem;
 }
 
-#mainNav ul li a:hover{
-  
-  font-size: 2.5rem;
+#mainNav ul li a:hover {
+    font-size: 2.5rem;
+    animation: encender 250ms ease-in;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
 
-  animation: encender 250ms ease-in;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1 ;
-  
+li .borderDiv {
+    width: 100%;
+    display: none;
+    border-color: #000;
+}
+
+#mainNav ul li:hover .borderDiv {
+    display: block;
+    animation: selectNav 250ms ease-in;
+}
+
+@keyframes selectNav {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        display: block;
+        opacity: 1;
+    }
 }
 
 @keyframes encender {
-
-  0%{
-color: #000;
-  }
-  100%{
-    color: #a0a036;
-  }
-  
+    0% {
+        color: #2E2E2B;
+    }
+    100% {
+        color: rgb(0, 0, 0);
+    }
 }
 
-#animacionSpoty{
-  background:linear-gradient(to right, #FDFBFB, #EBEDEE 70%);;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 8rem;
-  animation: boing 2s ease-in-out;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-
+#animacionSpoty {
+    background: linear-gradient(to right, #FDFBFB, #EBEDEE 70%);
+    ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 8rem;
+    animation: boing 2s ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
 }
 
 @keyframes boing {
-  15%, 40%, 75%, 100% {
-      transform-origin: center center;
-  }
-  15% {
-      transform: scale(1.2, 1.1);
-  }
-  40% {
-      transform: scale(0.95, 0.95);
-  }
-  75% {
-      transform: scale(1.05, 1);
-  }
-  100% {
-      transform: scale(1, 1);
-  }
+    15%,
+    40%,
+    75%,
+    100% {
+        transform-origin: center center;
+    }
+    15% {
+        transform: scale(1.2, 1.1);
+    }
+    40% {
+        transform: scale(0.95, 0.95);
+    }
+    75% {
+        transform: scale(1.05, 1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
 }
 
-
-
 .sectionDiv {
-  height: 50rem;
-  text-align: center;
-  scroll-behavior: smooth;
+    height: 50rem;
+    text-align: center;
+    scroll-behavior: smooth;
 }
 
 #listaEimagen {
-  display: flex;
+    display: flex;
 }
 
 #listaEimagen section {
-  width: 50vw;
+    width: 50vw;
 }
 
 footer {
-  display: flex;
-  height: 10rem;
-  background: linear-gradient(to bottom, #67b3ea, #51bae8);
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 15px 0px 28px rgba(0, 0, 0, 0.5);
+    display: flex;
+    height: 10rem;
+    background: linear-gradient(to bottom, #67b3ea, #51bae8);
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 15px 0px 28px rgba(0, 0, 0, 0.5);
 }
 
-footer ul{
-  display: flex;
-  margin-right: 10rem;
+footer ul {
+    display: flex;
+    margin-right: 10rem;
 }
-footer ul li{
-  margin: 0rem 3rem
+
+footer ul li {
+    margin: 0rem 3rem
 }
 
 .btnVolver {
-  position: sticky;
-  background: chartreuse;
-  top: 90vh;
-  left: 1rem;
-  height: 10rem;
-  width: 5rem;
-  overflow: hidden;
+    position: sticky;
+    background: chartreuse;
+    top: 90vh;
+    left: 1rem;
+    height: 10rem;
+    width: 5rem;
+    overflow: hidden;
 }
 
 #compraSection {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 #heroSection {
-  display: flex;
-  justify-content: center;
-  height: 50rem;
-  align-items: center;
-  background: linear-gradient(to bottom, #ffad9a, #ffa2b4);
+    display: flex;
+    justify-content: center;
+    height: 50rem;
+    align-items: center;
+    background: #2E2E2B;
 }
-
 
 #descripcionSection {
-
-
-  display: flex;
-  height: 60rem;
-  justify-content: space-evenly;
-  flex-grow: 1;
-  padding-top: 3rem;
+    display: flex;
+    height: 60rem;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding: 5rem 0;
 }
 
-.borderDiv{
-margin: 0 auto;  
-  border-style: solid none none none;
-  width: 95%;
-  height: 1.4rem;
-  border-radius:0.2rem ;
-  border-color: gray;
-  
+.borderDiv {
+    margin: 0 auto;
+    border-style: solid none none none;
+    width: 95%;
+    height: 0.4rem;
+    border-radius: 0.2rem;
+    border-color: gray;
 }
 
 #lista1,
 #lista2 {
-  width: 50%;
+    width: 50%;
 }
 
 #listaArtistas {
-  margin-top: 3rem;
-  display: flex;
+    margin-top: 3rem;
+    display: flex;
 }
 
 #programaSection {
-  height: 60rem;
-  background: linear-gradient(to bottom, #ed9fce, #c8a2e1);
+    display: flex;
+    flex-direction: column;
+    height: 60rem;
+    background: #2E2E2B;
+    color: white;
 }
 
 .section2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #compraSection {
-  background: linear-gradient(to bottom, #aba8eb, #8aaeee);
+    background: linear-gradient(to bottom, #aba8eb, #8aaeee);
 }
 
 #patrocinioSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  text-align: center;
-  height: 20rem;
-  background: linear-gradient(to bottom, #8aaeee, #67b3ea);
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 20rem;
+    background: linear-gradient(to bottom, #8aaeee, #67b3ea);
+    flex-wrap: wrap;
 }
 
 figure {
-  position: relative;
-  width: 80%;
-  height: 80%;
-  display: flex;
-  justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
 }
+
 #imgHero {
-  border-radius: 0.3rem;
-  height: 90%;
-  width: 100%;
-  object-fit: cover;
-  object-position: 0% 100%;
-  box-shadow: 0px 15px 28px rgba(0, 0, 0, 0.5);
+    border-radius: 0.3rem;
+    box-shadow: 0px 15px 28px rgba(0, 0, 0, 0.5);
 }
 
 #capa {
-  visibility: hidden;
-  opacity: 0;
-  border-radius: 30px;
-  position: absolute;
-  top: 0;
-  transition: all 500ms ease-out;
-  width: 100%;
-  height: 100.5%;
-  background: rgba(237, 159, 206, 0.2);
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    transition: all 500ms ease-out;
+    width: 100%;
+    height: 100.5%;
 }
 
-#capa p {
-  color: aliceblue;
-  padding-top: 9rem;
-  font-size: 4rem;
-  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
-    -1px -1px 0 #000;
+#capa h1 {
+    font-family: 'Fredoka', sans-serif;
+    color: #6EB9AE;
+    padding-top: 8rem;
+    font-size: 9rem;
+    animation: heroBoing 2s ease;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-shadow: -2px 4px 0 #000, 2px 2px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
 
-figure:hover > #capa {
-  opacity: 1;
-  visibility: visible;
-}
-
-figure:hover > p {
-  margin-top: 7rem;
-  margin-bottom: 1.5rem;
-  transition: all 500ms ease-out;
+@keyframes heroBoing {
+    0% {
+        font-size: 9rem;
+    }
+    100% {
+        font-size: 11rem;
+    }
 }
 
 p {
-  color: rgb(34, 13, 13);
+    color: rgb(34, 13, 13);
 }
 
 #logo {
-  object-fit: scale-down;
-  object-position: 50% 50%;
-  height: 7rem;
-  width: 10vw;
+    object-fit: scale-down;
+    object-position: 50% 50%;
+    height: 7rem;
+    width: 10vw;
 }
 
 #linkLogo {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .patrocinadores {
-  height: 10rem;
-  padding: 1rem;
+    height: 10rem;
+    padding: 1rem;
 }
 
 #mapa {
-  width: 60rem;
-  height: 80%;
-  border-radius: 3rem;
+    width: 60rem;
+    height: 80%;
+    border-radius: 3rem;
 }
 
 #divMapa {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #divMapa h1 {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
+
 #logosPatrocinio {
-  display: flex;
-  justify-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 ul li input,
 ul li select {
-  height: 2.5rem;
+    height: 2.5rem;
 }
 
 form ul li {
-  margin-top: 2rem;
+    margin-top: 2rem;
 }
+
 #formReserva {
-  display: flex;
-  flex-direction: column;
-  margin-right: 44.2%;
-  align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin-right: 44.2%;
+    align-items: flex-end;
 }
 
 form {
-  align-items: center;
+    align-items: center;
 }
 
 #compraSection h2 {
-  margin: 1.5rem 0;
+    margin: 1.5rem 0;
 }
 
 #submit {
-  color: black;
-  border-radius: 0.5rem;
-  width: 17rem;
-  height: 3rem;
-
+    color: black;
+    border-radius: 0.5rem;
+    width: 17rem;
+    height: 3rem;
 }
 
-#submit:hover{
-  cursor: pointer;
+#submit:hover {
+    cursor: pointer;
     animation: boing 300ms ease-in-out;
     color: #fff;
     cursor: pointer;
@@ -347,38 +366,29 @@ form {
 }
 
 #valorBoleta {
-  margin-top: 5rem;
+    margin-top: 5rem;
 }
 
-.programacion{
-  padding-top: 7rem;
-  font-size: 5rem;
+.programacion {
+    padding-top: 5rem;
+    font-size: 5rem;
 }
 
-.horarios{
-  display: flex;
-  flex-direction: column;
+.horarios {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
     margin-bottom: 5rem;
 }
 
-.horarios h2{
-  margin-left: 6rem;
+.horarios h2 {
+    margin-left: 6rem;
 }
 
-.horarios ul{
-  display: flex;
+.horarios ul {
+    display: flex;
 }
 
-.horarios ul li{
-
-  margin-left: 10rem;
-}
-
-a:visited{
-  color: #000;
-}
-
-a:hover{
-  color: white
+.horarios ul li {
+    margin-left: 10rem;
 }
